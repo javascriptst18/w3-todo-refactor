@@ -45,8 +45,8 @@ function validateInput(input) {
 // Create a new list item when clicking on the "Add" button
 function createNewListElement() {
   let inputField = document.getElementById("addNewTodo");
-  var listItem = document.createElement("li");
-  var inputValue = inputField.value;
+  let listItem = document.createElement("li");
+  let inputValue = inputField.value;
   listItem.innerText = inputValue;
 
   if (validateInput(inputValue)) {
