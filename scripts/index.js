@@ -54,6 +54,7 @@ function newElement() {
   span.appendChild(txt);
   li.appendChild(span);
 
+  var close = document.getElementsByClassName("close");
   for (let closeButton of close) {
     closeButton.onclick = function () {
       var div = this.parentElement;
