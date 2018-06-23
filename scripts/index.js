@@ -23,7 +23,7 @@ function bindCloseButtonEvents() {
 
 // Add a "checked" symbol when clicking on a list item
 function appendCheckedToElement() {
-  var listOfTodos = document.querySelector('ul');
+  var listOfTodos = document.getElementById('listOfTodos');
   listOfTodos.addEventListener('click', function (ev) {
     if (ev.target.tagName === 'LI') {
       ev.target.classList.toggle('checked');
