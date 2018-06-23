@@ -16,7 +16,7 @@ function bindCloseButtonEvents() {
   for (let closeButton of closeButtonElements) {
     closeButton.addEventListener('click', function () {
       var div = this.parentElement;
-      div.style.display = "none";
+      div.classList.toggle('hidden');
     })
   }
 }
