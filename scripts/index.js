@@ -12,10 +12,10 @@ function createCloseButtons() {
 
 // Click on a close button to hide the current list item
 function bindCloseButtonEvents() {
-  var closeButtonElements = document.getElementsByClassName("close");
+  let closeButtonElements = document.getElementsByClassName("close");
   for (let closeButton of closeButtonElements) {
     closeButton.addEventListener('click', function () {
-      var div = this.parentElement;
+      let div = this.parentElement;
       div.classList.toggle('hidden');
     })
   }
