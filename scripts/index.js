@@ -1,7 +1,7 @@
 // Create a "close" button and append it to each list item
 function createCloseButtons() {
-  var myNodelist = document.getElementsByTagName("LI");
-  for (let listItemElement of myNodelist) {
+  var listOfItems = document.getElementsByTagName("LI");
+  for (let listItemElement of listOfItems) {
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
     span.className = "close";
