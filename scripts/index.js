@@ -2,11 +2,11 @@
 function createCloseButtons() {
   var listOfItems = document.getElementsByTagName("LI");
   for (let listItemElement of listOfItems) {
-    var span = document.createElement("SPAN");
+    var closeButton = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    listItemElement.appendChild(span);
+    closeButton.className = "close";
+    closeButton.appendChild(txt);
+    listItemElement.appendChild(closeButton);
   }
 }
 
