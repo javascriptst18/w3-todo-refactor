@@ -48,11 +48,7 @@ function newElement() {
   }
   document.getElementById("addNewTodo").value = "";
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+  li.appendChild(createCloseButtonElement());
 
   bindCloseButtonEvents();
 }
