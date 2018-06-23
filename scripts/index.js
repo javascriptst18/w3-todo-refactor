@@ -4,6 +4,8 @@ function createCloseButtons() {
   for (let listItemElement of listOfItems) {
     listItemElement.appendChild(createCloseButtonElement());
   }
+  appendCheckedToElement();
+  bindCloseButtonEvents();
 }
 
 function createCloseButtonElement() {
@@ -69,5 +71,3 @@ function createNewListItem() {
 const submitTodoButton = document.getElementById('submitTodo');
 submitTodoButton.addEventListener('click', createNewListItem);
 createCloseButtons();
-bindCloseButtonEvents();
-appendCheckedToElement();
