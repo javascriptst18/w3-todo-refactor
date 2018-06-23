@@ -37,18 +37,18 @@ function appendCheckedToElement() {
 
 // Create a new list item when clicking on the "Add" button
 function createNewListElement() {
-  var li = document.createElement("li");
+  var listItem = document.createElement("li");
   var inputValue = document.getElementById("addNewTodo").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
+  listItem.innerText = inputValue;
+
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("listOfTodos").appendChild(li);
+    document.getElementById("listOfTodos").appendChild(listItem);
   }
   document.getElementById("addNewTodo").value = "";
 
-  li.appendChild(createCloseButtonElement());
+  listItem.appendChild(createCloseButtonElement());
 
   bindCloseButtonEvents();
 }
