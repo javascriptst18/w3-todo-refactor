@@ -42,12 +42,17 @@ function validateInput(input) {
   return false;
 }
 
-// Create a new list item when clicking on the "Add" button
-function createNewListElement() {
-  let inputField = document.getElementById("addNewTodo");
+function createListItemElement(listItemValue) {
   let listItem = document.createElement("li");
-  let inputValue = inputField.value;
   listItem.innerText = inputValue;
+  return listItem;
+}
+
+// Create a new list item when clicking on the "Add" button
+function createNewListItem() {
+  let inputField = document.getElementById("addNewTodo");
+  let inputValue = inputfield.value;
+  let listItem = createListItemElement(inputValue);
 
   if (validateInput(inputValue)) {
     alert("You must write something!");
