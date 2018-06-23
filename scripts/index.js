@@ -55,9 +55,9 @@ function createNewListItem() {
   let listItem = createListItemElement(inputValue);
 
   if (validateInput(inputValue)) {
-    alert("You must write something!");
-  } else {
     document.getElementById("listOfTodos").appendChild(listItem);
+  } else {
+    alert("You must write something!");
   }
   inputField.value = "";
 
