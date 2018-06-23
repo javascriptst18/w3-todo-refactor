@@ -31,10 +31,6 @@ function appendCheckedToElement() {
   }, false);
 }
 
-const submitTodoButton = document.getElementById('submitTodo');
-
-submitTodoButton.addEventListener('click', newElement);
-
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -63,6 +59,8 @@ function newElement() {
   }
 }
 
+const submitTodoButton = document.getElementById('submitTodo');
+submitTodoButton.addEventListener('click', newElement);
 createCloseButtons();
 bindCloseButtonEvents();
 appendCheckedToElement();
