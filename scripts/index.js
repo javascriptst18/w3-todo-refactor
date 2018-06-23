@@ -67,7 +67,7 @@ function createNewListItem() {
 }
 
 const submitTodoButton = document.getElementById('submitTodo');
-submitTodoButton.addEventListener('click', newElement);
+submitTodoButton.addEventListener('click', createNewListItem);
 createCloseButtons();
 bindCloseButtonEvents();
 appendCheckedToElement();
