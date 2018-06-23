@@ -3,9 +3,9 @@ function createCloseButtons() {
   var listOfItems = document.getElementsByTagName("LI");
   for (let listItemElement of listOfItems) {
     var closeButton = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var closeIcon = document.createTextNode("\u00D7");
     closeButton.className = "close";
-    closeButton.appendChild(txt);
+    closeButton.appendChild(closeIcon);
     listItemElement.appendChild(closeButton);
   }
 }
