@@ -14,10 +14,10 @@ function createCloseButtons() {
 function bindCloseButtonEvents() {
   var closeButtonElements = document.getElementsByClassName("close");
   for (let closeButton of closeButtonElements) {
-    closeButton.onclick = function () {
+    closeButton.addEventListener('click', function () {
       var div = this.parentElement;
       div.style.display = "none";
-    }
+    })
   }
 }
 
