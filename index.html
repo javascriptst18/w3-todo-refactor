@@ -6,24 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Todo List</title>
 </head>
 
 <body>
-  <div id="myDIV" class="header">
-    <h2>My To Do List</h2>
+  <header id="myDIV" class="header">
+    <h1>My To Do List</h1>
     <input type="text" id="myInput" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add</span>
-  </div>
+    <button onclick="newElement()" class="addBtn">Add</button>
+  </header>
 
-  <ul id="myUL">
-    <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
-    <li>Meet George</li>
-    <li>Buy eggs</li>
-    <li>Read a book</li>
-    <li>Organize office</li>
-  </ul>
+  <main class="container">
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
+  </main>
+
   <script src="scripts/index.js"></script>
 </body>
 
