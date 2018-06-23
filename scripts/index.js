@@ -42,7 +42,7 @@ function validateInput(input) {
   return false;
 }
 
-function createListItemElement(listItemValue) {
+function createListItemElement(inputValue) {
   let listItem = document.createElement("li");
   listItem.innerText = inputValue;
   return listItem;
@@ -51,7 +51,7 @@ function createListItemElement(listItemValue) {
 // Create a new list item when clicking on the "Add" button
 function createNewListItem() {
   let inputField = document.getElementById("addNewTodo");
-  let inputValue = inputfield.value;
+  let inputValue = inputField.value;
   let listItem = createListItemElement(inputValue);
 
   if (validateInput(inputValue)) {
