@@ -2,12 +2,16 @@
 function createCloseButtons() {
   let listOfItems = document.getElementsByTagName("LI");
   for (let listItemElement of listOfItems) {
-    let closeButton = document.createElement("SPAN");
-    let closeIcon = document.createTextNode("\u00D7");
-    closeButton.className = "close";
-    closeButton.appendChild(closeIcon);
-    listItemElement.appendChild(closeButton);
+    listItemElement.appendChild(createCloseButtonElement());
   }
+}
+
+function createCloseButtonElement() {
+  let closeButton = document.createElement("SPAN");
+  let closeIcon = document.createTextNode("\u00D7");
+  closeButton.className = "close";
+  closeButton.appendChild(closeIcon);
+  return closeButton;
 }
 
 // Click on a close button to hide the current list item
