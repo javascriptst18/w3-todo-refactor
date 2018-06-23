@@ -1,9 +1,9 @@
 // Create a "close" button and append it to each list item
 function createCloseButtons() {
-  var listOfItems = document.getElementsByTagName("LI");
+  let listOfItems = document.getElementsByTagName("LI");
   for (let listItemElement of listOfItems) {
-    var closeButton = document.createElement("SPAN");
-    var closeIcon = document.createTextNode("\u00D7");
+    let closeButton = document.createElement("SPAN");
+    let closeIcon = document.createTextNode("\u00D7");
     closeButton.className = "close";
     closeButton.appendChild(closeIcon);
     listItemElement.appendChild(closeButton);
