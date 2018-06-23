@@ -35,13 +35,20 @@ function appendCheckedToElement() {
   }, false);
 }
 
+function validateInput(input) {
+  if (input.trim()) {
+    return true;
+  }
+  return false;
+}
+
 // Create a new list item when clicking on the "Add" button
 function createNewListElement() {
   var listItem = document.createElement("li");
   var inputValue = document.getElementById("addNewTodo").value;
   listItem.innerText = inputValue;
 
-  if (inputValue === '') {
+  if (validateInput(inputValue)) {
     alert("You must write something!");
   } else {
     document.getElementById("listOfTodos").appendChild(listItem);
