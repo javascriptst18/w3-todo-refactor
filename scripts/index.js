@@ -36,7 +36,7 @@ function appendCheckedToElement() {
 }
 
 // Create a new list item when clicking on the "Add" button
-function newElement() {
+function createNewListElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("addNewTodo").value;
   var t = document.createTextNode(inputValue);
