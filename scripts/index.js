@@ -20,9 +20,8 @@ function createCloseButtonElement() {
 function bindCloseButtonEvents() {
   let closeButtonElements = document.getElementsByClassName('close');
   for (let closeButton of closeButtonElements) {
-    closeButton.addEventListener('click', function () {
-      let div = this.parentElement;
-      div.remove();
+    closeButton.addEventListener('click', (event) => {
+      event.target.parentElement.remove();
     })
   }
 }
@@ -30,7 +29,7 @@ function bindCloseButtonEvents() {
 // Add a 'checked' symbol when clicking on a list item
 function appendCheckedToElement() {
   let listOfTodos = document.getElementById('listOfTodos');
-  listOfTodos.addEventListener('click', function (event) {
+  listOfTodos.addEventListener('click', (event) => {
     if (event.target.matches('LI')) {
       event.target.classList.toggle('checked');
     }
